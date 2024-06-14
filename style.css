@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(134, 56, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background-color: gray;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    gap: .5rem;
+    border-color: rgb(78, 32, 11);
+    border-style: solid;
+    border-width: 10px;
+}
+
+.calculadora:hover {
+    border-color: rgb(241, 122, 24); /* Color del borde al pasar el mouse */
+}
+
+.pantalla {
+    grid-column: 1 / 6;
+    background-color: rgb(58, 39, 39);
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#numeros {
+    background-color: rgb(226, 64, 64);
+    color: black;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    transition: background-color .2s ease-in-out;
+}
+#numeros:hover {
+    background-color: rgb(145, 1, 1);
+}
+
+#operadores {
+    background-color: pink;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+#operadores:hover {
+    background-color: rgb(255, 2, 2);
+}
